@@ -26,6 +26,14 @@ end
 
 # Factorial method
 def factorial(n)
-    return 1 if n == 0
     (1..n).inject(:*)
 end
+
+def factorial(n)
+    return 1 if n == 0
+    (1..n).inject(1, :*)
+  end
+  
+  def multiply(a, b)
+    a * b
+  end
